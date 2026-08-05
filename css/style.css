@@ -1,0 +1,516 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+body {
+  font-family: 'Inter', sans-serif;
+  background: #118597;
+  line-height: 1.5;
+  color:#001A4B;
+}
+p{
+  line-height: 1.6;
+}
+a{
+  color: #fff;
+}
+a:hover{
+  color: #118597;
+}
+.title{
+  font-size: 20px;
+  color: #001A4B;
+}
+.header-contact {
+  color: #fff;
+  background: #001A4B;
+  font-size: 15px;
+}
+.wrapper-header-contact {
+    display: flex;
+    gap: 40px;
+    padding: 9px 0;
+    justify-content: center;
+}
+  .logo {
+      margin: 0 auto;
+      text-align: center;
+      background: #fff;
+    }
+    .logo img {
+      width: 320px;
+      padding: 14px 16px;
+    }
+.banner {
+  background: #001A4B;
+  padding: 16px 0;
+}
+.banner .title {
+  color: #F2994A;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 11px;
+  }
+.title-big {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.slogan {
+  display: block;
+  width: 90px;
+  font-size: 15px;
+  color: #fff;
+  line-height: 2;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Burger menu - Start */
+.nav {
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding: 10px 20px;
+      background-color: #fff;    /* ← замени на свой цвет хедера */
+    }
+  
+    /* Кнопка-бургер */
+    .header-burger {
+      width: 230px;
+      height: 36px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      flex-shrink: 0;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+
+    .header-burger:hover {
+      background: rgba(0, 0, 0, 0);
+    }
+
+    .header-burger span,
+    .header-burger span::before,
+    .header-burger span::after {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: #333;          /* ← замени на свой цвет иконки */
+      border-radius: 2px;
+      position: relative;
+      transition: transform 0.35s ease, background 0.25s ease;
+    }
+
+    .header-burger span::before,
+    .header-burger span::after {
+      content: '';
+      position: absolute;
+      left: 0;
+    }
+
+    .header-burger span::before { top: -7px; }
+    .header-burger span::after  { top:  7px; }
+
+    /* Анимация в крестик */
+    .header-burger.active span           { background: transparent; }
+    .header-burger.active span::before   { transform: translateY(7px) rotate(45deg); }
+    .header-burger.active span::after    { transform: translateY(-7px) rotate(-45deg); }
+
+    /* Выпадающее меню */
+    .header-menu {
+      position: absolute;
+      top: 83%;
+      left: 0;
+      right: 0;
+      background: #fff;           /* ← замени на свой цвет фона меню */
+      overflow: hidden;
+      max-height: 0;              /* скрыто по умолчанию */
+      transition: max-height 0.35s ease;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .header-menu.open {
+      max-height: 400px;          /* должно быть больше реальной высоты меню */
+    }
+
+    .header-menu ul {
+      list-style: none;
+      padding: 8px 0;
+    }
+
+    .header-menu li {
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .header-menu li:last-child {
+      border-bottom: none;
+    }
+
+    .header-link {
+      display: block;
+      padding: 14px 20px;
+      font-size: 15px;
+      color: #333;                /* ← замени на свой цвет ссылок */
+      text-decoration: none;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .header-link:hover {
+      background: #f7f7f7;        /* ← замени на свой hover-цвет */
+      color: #1A73E8;             /* ← замени на свой акцентный цвет */
+    }
+/* Burger menu - finish */
+
+.card{
+  border: 1px solid #001A4B;
+  border-radius: 15px;
+  box-shadow: 3px 4px 5px rgba(0,0,0,0.5);
+  background: #F5F5F5;
+  margin: 10px;
+  font-family: 'Fraunces', sans-serif;
+  padding: 25px 8px;
+}
+.stats .card {
+  height: 115px;
+  border: 1px solid #001A4B;
+  border-radius: 15px;
+  box-shadow: 3px 4px 5px rgba(0,0,0,0.5);
+  background: #F5F5F5;
+  margin: 10px;
+  font-family: 'Fraunces', sans-serif;
+  text-align: center;
+  padding-top: 25px;
+}
+.stats .card .title{
+  font-size: 25px;
+  font-weight: 700;
+}
+.stats .card .discription{
+  margin-top: 15px;
+  color: #0A688A;
+}
+
+.program .title-main{
+  font-size: 20px;
+  color:#F2994A;
+  text-align: center;
+  margin: 25px 0 13px;
+  font-weight: 700;
+}
+.program .discription-main{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color:#F2994A;
+  margin-bottom: 13px;
+}
+.ico img{
+  float: left;
+  margin: 0 15px;
+}
+.program .title{
+  text-align: center;
+  margin-bottom: 15px;
+}
+.program .discription{
+  text-align: justify;
+  font-size: 16px;
+}
+.our {
+  position: relative;
+  z-index: 2;
+  background-color:#fff;
+  padding:20px 10px;
+  font-size: 20px;
+  overflow: hidden;
+  line-height: 1.7;
+}
+.our span{
+  color: #F2994A;
+}
+.our::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/background-our-mission.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  z-index: 1;
+}
+.line {
+  width: 100px;
+  height: 1px;
+  background-color:#F2994A;
+  margin: 20px 0;
+}
+.card-exp{
+  border: 1px solid #118597;
+  border-radius: 15px;
+  box-shadow: 3px 4px 5px rgba(0,0,0,0.5);
+  background: #F5F5F5;
+  margin: 10px 0;
+  padding: 20px 8px;
+}
+.card-exp .title{
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.card-exp .discription {
+  text-align: justify;
+}
+footer{
+  background-color:#001A4B;
+  color: #fff;
+  margin-top: 18px;
+  padding-top: 45px;
+}
+.logo-footer {
+  text-align: center;
+  margin-bottom: 37px;
+}
+.slogan-footer {
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 27px;
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 36px;
+}
+footer .phone{
+  text-align: center;
+  margin-bottom: 17px;
+}
+.email {
+  text-align: center;
+}
+footer .line{
+  height: 1px;
+  background-color:#0E4385;
+  width: 100%;
+}
+.footer-menu {
+  text-align: center; 
+}
+.footer-menu a{
+  color:#fff;
+}
+
+.copyright {
+  text-align: center;
+}
+
+/* ---------- Start mobaile version ------------- */
+
+@media (min-width: 375px){
+  .header-burger{
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px){
+  .header-burger{
+    width: 94%;
+  }
+}
+/* Burger menu madia */
+@media (min-width: 1024px){
+
+.wrapper-header-contact {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.phone, .email {
+  padding: 5px 20px;
+}
+.nav{
+  background-color: transparent;
+}
+
+  /* Лого и nav в одну строку */
+  .top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    background-color:#fff;
+    font-size: 15px;
+  }
+  .top-menu a{
+    color: #001A4B;
+  }
+  .top-menu a:hover{
+    color: #118597;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  /* Прячем бургер и подпись */
+  .header-burger { display: none; }
+  .burger-title  { display: none; }
+
+  /* Показываем кнопку */
+  .nav-btn { display: flex; }
+
+  /* Меню горизонтально */
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 0;
+  }
+
+  .header-menu {
+    position: static;
+    max-height: none;
+    overflow: visible;
+    box-shadow: none;
+    background: transparent;
+    font-size: 24px;
+  }
+
+  .header-menu ul {
+    display: flex;
+    gap: 32px;
+    padding: 0;
+  }
+
+  .header-menu li {
+    border-bottom: none;
+  }
+
+  .header-link {
+    padding: 0;
+    color: #1a73e8;
+  }
+/* Burger menu - finish */
+
+ .banner {
+    height: 360px;
+    position: relative;
+    z-index: 1;
+
+    background: linear-gradient(
+        110deg,
+        #06182c 0%,
+        #07334d 45%,
+        #118597 100%
+    );
+
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 96%,
+        90% 95%,
+        80% 95%,
+        70% 95%,
+        60% 96%,
+        50% 98%,
+        40% 100%,
+        30% 100%,
+        20% 98%,
+        10% 94%,
+        0 87%
+    );
+  }
+  .banner .title{
+    font-size: 15px;
+    margin: 60px 0 45px 0;
+  }
+  .banner .title-big{
+    font-size: 32px;
+  }
+  .slogan {
+    font-size: 20px;
+    margin-top: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.slogan span {
+    display: flex;
+    align-items: center;
+}
+.slogan span:not(:last-child)::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    margin: 0 16px;
+    border-radius: 50%;
+    background: #ff8c00;
+}
+.stats{
+  display: flex;
+  justify-content: center;
+  margin-top: -35px;
+  position: relative;
+  z-index: 2;
+}
+.stats .card{
+  width: 300px;
+}
+.program-wrapper{
+  display: flex;
+  justify-content: center;
+}
+.program-wrapper .card{
+  width: 546px;
+}
+.program .card {
+  width: 546px;
+
+}

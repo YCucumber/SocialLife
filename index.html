@@ -1,125 +1,202 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Соціолайф — благодійний фонд</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>Sosiolife</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	 <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a href="#" class="logo">
-      <span class="logo-mark" aria-hidden="true"></span>
-      Соціолайф
-    </a>
-    <nav class="main-nav">
-      <a href="#about">Про нас</a>
-      <a href="#programs">Проєкти</a>
-      <a href="#report">Звітність</a>
-      <a href="#contacts">Контакти</a>
-    </nav>
-    <a href="#donate" class="btn btn-accent">Пожертвувати</a>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="wrap hero-inner">
-    <p class="eyebrow">Благодійний фонд «Соціолайф»</p>
-    <h1>Допомагаємо там,<br>де це найбільше потрібно</h1>
-    <p class="hero-lead">Медична допомога, відновлення житла та підтримка дітей —<br>кожна гривня доходить до тих, хто на неї чекає.</p>
-    <div class="hero-actions">
-      <a href="#donate" class="btn btn-accent btn-lg">Підтримати зараз</a>
-      <a href="#programs" class="btn btn-ghost btn-lg">Наші проєкти</a>
-    </div>
-  </div>
-  <svg class="wheat-divider" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
-    <path d="M0,40 C240,90 480,0 720,40 C960,80 1200,0 1440,40 L1440,90 L0,90 Z" fill="var(--color-surface)"/>
-  </svg>
-</section>
-
-<section class="stats">
-  <div class="wrap stats-grid">
-    <div class="stat">
-      <span class="stat-number">4 812</span>
-      <span class="stat-label">родин отримали допомогу</span>
-    </div>
-    <div class="stat">
-      <span class="stat-number">₴3.2&nbsp;млн</span>
-      <span class="stat-label">зібрано за останній рік</span>
-    </div>
-    <div class="stat">
-      <span class="stat-number">27</span>
-      <span class="stat-label">активних проєктів зараз</span>
-    </div>
-  </div>
-</section>
-
-<section id="programs" class="programs">
-  <div class="wrap">
-    <p class="eyebrow eyebrow-dark">Напрямки роботи</p>
-    <h2>Три поля, де ми працюємо щодня</h2>
-    <div class="program-grid">
-      <article class="program-card">
-        <span class="program-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21c-4-3-7-6.5-7-10a7 7 0 0 1 14 0c0 3.5-3 7-7 10Z"/><path d="M12 8v6M9 11h6"/></svg>
-        </span>
-        <h3>Медична допомога</h3>
-        <p>Ліки, обладнання та реабілітація для постраждалих і поранених.</p>
-      </article>
-      <article class="program-card">
-        <span class="program-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg>
-        </span>
-        <h3>Відновлення житла</h3>
-        <p>Ремонт пошкоджених будинків і тимчасове житло для родин.</p>
-      </article>
-      <article class="program-card">
-        <span class="program-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 4 3 8l9 4 9-4-9-4Z"/><path d="M7 10.5V16c0 1.5 2.2 3 5 3s5-1.5 5-3v-5.5"/></svg>
-        </span>
-        <h3>Освіта дітей</h3>
-        <p>Навчальні матеріали, репетитори та психологічна підтримка.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="donate" class="donate">
-  <div class="wrap donate-inner">
-    <div class="donate-text">
-      <p class="eyebrow">Долучитися</p>
-      <h2>Оберіть суму або вкажіть свою</h2>
-      <p>100% пожертв іде на проєкти. Адміністративні витрати покриваються окремими грантами.</p>
-    </div>
-    <div class="donate-panel">
-      <div class="amount-grid">
-        <button class="amount">200 ₴</button>
-        <button class="amount">500 ₴</button>
-        <button class="amount is-active">1000 ₴</button>
-        <button class="amount">Своя сума</button>
+  <div class="header-contact">
+    <div class="wrapper-header-contact">
+        <div class="phone">
+            <span>+38 (066) 569 36 96</span>
+         </div>
+         <div class="email">
+            <a href="#"><span>info@sociolife.org</span></a>
+         </div>
       </div>
-      <a href="#" class="btn btn-accent btn-block">Перейти до оплати</a>
+  </div>
+  <div class="top-menu">
+  <div class="logo">
+    <img src="images/logo-sociolafe.png" alt="Sosiolife Logo">
+  </div>
+  <div class="header-menu" id="menu">
+      <ul>
+        <li><a href="#" class="header-link">Про нас</a></li>
+        <li><a href="#" class="header-link">Нашы програми</a></li>
+        <li><a href="#" class="header-link">Документи</a></li>
+        <li><a href="#" class="header-link">Досвід фонду</a></li>
+        <li><a href="#" class="header-link">Контакти</a></li>
+      </ul>
+    </div>
+    </div>
+  <div class="banner">
+    <div class="title">БЛАГОДІЙНИЙ ФОНД «СОЦІОЛАЙФ»</div>
+    <div class="title-big">Створюємо рішення для життя</div>
+    <div class="slogan">
+      <span>Досліджуємо</span>
+      <span>Проєктуємо</span>
+      <span>Реалізуємо</span>
+      <span>Оцінюємо</span>
+      <span>Масштабуємо</span>
     </div>
   </div>
-</section>
-
-<footer id="contacts" class="site-footer">
-  <div class="wrap footer-inner">
-    <div>
-      <span class="logo logo-light"><span class="logo-mark" aria-hidden="true"></span>Разом</span>
-      <p class="footer-note">Благодійний фонд, зареєстрований в Україні.</p>
-    </div>
-    <div class="footer-links">
-      <a href="#about">Про нас</a>
-      <a href="#report">Фінансова звітність</a>
-      <a href="mailto:info@razom.ua">social-life@razom.ua</a>
+  <div class="nav">
+    <div class="burger-title">Меню</div>
+    <div class="header-burger" id="burger">
+      <span></span>
     </div>
   </div>
-</footer>
 
+  <div class="stats">
+    <div class="card">
+      <div class="title">З 2014 року</div>
+      <div class="discription">працюємо для суспільства</div>
+    </div>
+    <div class="card">
+      <div class="title">Експертність</div>
+      <div class="discription">досвід і практика</div>
+    </div>
+    <div class="card">
+      <div class="title">Повний цикл</div>
+      <div class="discription">від дослідження до впровадження</div>
+    </div>
+  </div>
+  <div class="program">
+    <div class="title-main">Напрямки роботи</div>
+    <div class="discription-main">П’ять програм, за якими ми працюємо щодня</div>
+    <div class="program-wrapper">
+    <div class="card">
+          <div class="ico"><img src="images/tabler_bulb.png" alt=""></div>
+          <div class="title">Освіта, розвиток та просвіта</div>
+          <div class="discription">Мета — розвиток знань, компетентностей і практичних навичок через навчальні програми, тренінги, дослідження, методичні матеріали, підготовку фахівців і підтримку освітніх ініціатив.</div>  
+    </div>
+    <div class="card">
+          <div class="ico"><img src="images/tabler_heart-handshake.png" alt=""></div>
+          <div class="title">Психічне здоров'я та психосоціальна підтримка</div>
+          <div class="discription">Мета — забезпечення доступу дітей, молоді, дорослих і фахівців допомагаючих професій до якісної психологічної підтримки, профілактики психоемоційного виснаження, розвитку стійкості та відновлення після кризових подій.</div>
+    </div>
+    </div>
+    <div class="program-wrapper">
+    <div class="card">
+          <div class="ico"><img src="images/flowbite_users-group-outline.png" alt=""></div>
+          <div class="title">Розвиток громад та соціальна підтримка</div>
+          <div class="discription">Мета — підтримка громад, сімей та соціально вразливих категорій населення шляхом реалізації гуманітарних, соціальних, інтеграційних і відновлювальних проєктів, розвитку партнерств та місцевих ініціатив.</div>
+    </div>
+    <div class="card">
+          <div class="ico"><img src="images/tabler_chart-infographic.png" alt=""></div>
+          <div class="title">Аналітика, дослідження та інновації</div>
+          <div class="discription">Мета — проведення соціологічних, психологічних та міждисциплінарних досліджень, моніторингу, оцінювання програм, розвитку систем MEAL, управління даними та впровадження інноваційних підходів у соціальній сфері.</div> 
+    </div>
+    </div>
+    <div class="program-wrapper">
+    <div class="card">
+          <div class="ico"><img src="images/tabler_plug-connected.png" alt=""></div>
+          <div class="title">Енергетична стійкість та кризова готовність</div>
+          <div class="discription">Мета — забезпечення безперервності роботи соціальних, освітніх і медичних сервісів під час надзвичайних ситуацій, підтримка енергетичної автономності громад і закладів, розвиток кризової готовності та стійкості.</div>
+    </div>
+    </div>    
+  </div>
+  <div class="our">
+    <span>Місія нашої Фундації</span> - <p>створювати рішення, що допомагають людям, громадам і організаціям розвиватися, долати сучасні виклики та підвищувати якість життя через професійну експертизу, освіту, партнерство, дослідження й соціальні інновації.
+    </p>
+  </div>
+  <div class="about">
+    <div class="card">
+    <div class="title">Про нас</div>
+    <div class="line"></div>
+      <div class="article"><p><b>БОБФ «Соціолайф»</b> — українська неприбуткова організація, яка створює та впроваджує рішення для розвитку людей, громад і організацій. Ми поєднуємо дослідження, експертну практику та управління соціальними програмами, щоб розробляти рішення, які відповідають реальним потребам суспільства. Наша діяльність охоплює освіту, психічне здоров'я та психосоціальну підтримку, соціальні дослідження, розвиток спроможності організацій і громад, а також гуманітарні й соціальні ініціативи.</p>
+          <p>Ми працюємо за принципом: Досліджуємо Проєктуємо Реалізуємо Оцінюємо Масштабуємо. Ми відкриті до партнерства з міжнародними донорами, органами державної влади, громадами, бізнесом і громадськими організаціями для спільного створення рішень, що мають довгостроковий суспільний вплив.</p>
+      </div>
+    </div>
+  </div>
+  <div class="expirience">
+    <div class="card">
+    <div class="title">Історія розвитку</div>
+    <div class="line"></div>
+      <div class="card-exp">
+      <div class="title">2014–2016</div>
+      <div class="discription">Благодійність і підтримка дітей Благодійний фонд «Соціолайф» було засновано у 2014 році. На початковому етапі діяльність фонду була зосереджена на підтримці дітей, які потребували спеціалізованої медичної допомоги, а також на допомозі закладам охорони здоров'я. Реалізовувалися програми адресної підтримки сімей, підтримки дитячого оздоровлення, забезпечення медичних установ обладнанням та іншими необхідними ресурсами. Діяльність фонду поступово охопила різні регіони України. У партнерстві з медичними закладами, громадами та небайдужими людьми фонд допомагав вирішувати нагальні потреби лікарень, поліклінік та інших соціально важливих установ, сприяючи покращенню умов надання допомоги дітям.
+      </div>
+    </div>
+    <div class="card-exp">
+      <div class="title">2022–2025</div>
+      <div class="discription">Реагування на виклики воєнного часу Після початку повномасштабної війни діяльність фонду була переорієнтована на реагування на гуманітарні виклики, з якими зіткнулася Україна. Основні зусилля були спрямовані на підтримку різних категорій населення, допомогу громадам, закладам та організаціям, які опинилися у складних умовах, а також реалізацію соціальних і гуманітарних ініціатив відповідно до актуальних потреб. Набутий досвід роботи в умовах кризи ще більше підтвердив, що ефективна допомога потребує не лише швидкого реагування, а й системного підходу, довгострокового планування та професійної експертизи. Від практичного досвіду — до програмної моделі За роки діяльності фонд реалізував численні благодійні, освітні, гуманітарні та соціальні ініціативи, співпрацюючи з громадами, закладами освіти, медичними установами, громадськими організаціями та партнерами. Саме цей багаторічний практичний досвід дозволив накопичити експертизу, зрозуміти реальні потреби людей і громад та усвідомити, що найбільший суспільний ефект досягається завдяки не окремим проєктам, а довгостроковим програмам, які поєднують дослідження, освіту, розвиток спроможності та практичне впровадження рішень. Тому розвиток фонду до сучасної програмної моделі став природним продовженням його багаторічної діяльності.
+      </div>
+    </div>
+      <div class="card-exp">
+      <div class="title">2026 — новий етап розвитку</div>
+      <div class="discription">У 2026 році Благодійний фонд «Соціолайф» розпочав новий етап свого розвитку. Було оновлено стратегічне бачення, затверджено нову редакцію статуту та сформовано програмну модель діяльності, яка об'єднала накопичений досвід у межах єдиної системи. Сьогодні фонд працює за п'ятьма стратегічними програмами, що охоплюють соціальні дослідження та аналітику, психічне здоров'я та психосоціальну підтримку, освіту, розвиток громад і організаційної спроможності, а також соціальні й гуманітарні ініціативи. Ми зберігаємо відданість принципам, які були закладені ще у 2014 році, водночас розвиваючи фонд як сучасну експертну організацію, що створює рішення для життя, поєднуючи дослідження, професійну експертизу, партнерство та практичну реалізацію програм.
+      </div>
+    </div>
+    </div>
+  </div>
+  <footer>
+    <div class="logo-footer"><img src="images/Logo-footer.png" alt="Sociolife"></div>
+    <div class="slogan-footer">Ми завжди відкриті до нових ідей, партнерств та спільних рішень. Зв'яжіться з нами — будемо раді знайомству.
+    </div>
+    <div class="socials">
+      <a href="https://www.facebook.com/profile.php?id=61592518603722"><div class="fasebook"><img src="images/facebook.png" alt="facebook"></div></a>
+      <a href="https://www.linkedin.com/company/sociolife-ua/?viewAsMember=true"><div class="linkedin"><img src="images/linkedin.png" alt="linkedin"></div></a>
+    </div>
+       <div class="phone"><i class="fa-solid fa-phone"></i>
+            <span>+38 (066) 569 36 96</span>
+         </div>
+       <div class="email"><i class="fa-regular fa-envelope"></i>
+            <a href="#"><span>info@sociolife.org</span></a>
+         </div>
+      <div class="line"></div>    
+      <div class="footer-menu">
+          <ul>
+                <li><a href="#" class="header-link">Про нас</a></li>
+                <li><a href="#" class="header-link">Нашы програми</a></li>
+                <li><a href="#" class="header-link">Документи</a></li>
+                <li><a href="#" class="header-link">Досвід фонду</a></li>
+                <li><a href="#" class="header-link">Контакти</a></li>
+          </ul>
+      </div>
+      <div class="line"></div>
+      <div class="copyright"><i class="fa-regular fa-copyright"></i> Sociolife. All rights reserved.</div>
+  </footer>
+
+
+
+<!--Script-->
+<script>
+    (function () {
+      var burger = document.getElementById('burger');
+      var menu   = document.getElementById('menu');
+
+      if (!burger || !menu) return;
+
+      // Открыть / закрыть по клику на бургер
+      burger.addEventListener('click', function () {
+        burger.classList.toggle('active');
+        menu.classList.toggle('open');
+      });
+
+      // Закрыть при клике на пункт меню
+      menu.querySelectorAll('.header-link').forEach(function (link) {
+        link.addEventListener('click', function () {
+          burger.classList.remove('active');
+          menu.classList.remove('open');
+        });
+      });
+
+      // Закрыть при клике вне меню
+      document.addEventListener('click', function (e) {
+        if (!burger.contains(e.target) && !menu.contains(e.target)) {
+          burger.classList.remove('active');
+          menu.classList.remove('open');
+        }
+      });
+    })();
+  </script>	
 </body>
 </html>
