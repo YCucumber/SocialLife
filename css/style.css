@@ -156,8 +156,8 @@ a:hover{
 
     /* Выпадающее меню */
     .header-menu {
-      position: absolute;
-      top: 83%;
+      position: relative;
+      top: 53%;
       left: 0;
       right: 0;
       background: #fff;           /* ← замени на свой цвет фона меню */
@@ -261,6 +261,8 @@ a:hover{
   background-color:#fff;
   padding:20px 10px;
   font-size: 20px;
+  font-weight: 600;
+  color: #001A4B;
   overflow: hidden;
   line-height: 1.7;
 }
@@ -331,10 +333,11 @@ footer .phone{
 .email {
   text-align: center;
 }
-footer .line{
+footer .line1, .line2, .line3{
   height: 1px;
   background-color:#0E4385;
   width: 100%;
+  margin: 20px 0;
 }
 .footer-menu {
   text-align: center; 
@@ -512,5 +515,49 @@ footer .line{
 }
 .program .card {
   width: 546px;
+}
+.our{
+  padding: 95px 20px;
+}
+footer {
+   background:#06235d;
+}
+.wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.line1, .line2{
+  display: none;
+}
+.footer-wrapper-logo{
+  margin: 0 0 0 50px;
+}
+.logo-footer{
+  text-align: left;
+}
+.slogan-footer{
+  width: 237px;
+  padding: 0;
+}
+.footer-menu ul{
+  display: flex;
+  flex-direction: row;
+  margin: 32px 0 45px 0;
+}
+.footer-menu li{
+  margin-right: 25px;
+}
+}
+
+@media (min-width: 1440px){
+.our .text{
+  width: 980px;
+  margin: 0 auto;
+}
+.about, .expirience{
+  width: 1120px;
+  margin: 0 auto;
+}
 
 }
