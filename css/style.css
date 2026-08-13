@@ -61,10 +61,8 @@ a:hover{
   font-size: 15px;
 }
 .wrapper-header-contact {
-    display: flex;
-    gap: 40px;
     padding: 9px 0;
-    justify-content: center;
+    text-align: center;
 }
   .logo {
       margin: 0 auto;
